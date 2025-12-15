@@ -1,0 +1,45 @@
+Признак,Важность
+bin__temporary_customer,0.1638536
+cat__Contract_Two year,0.14807098
+cat__Contract_One year,0.09917786
+bin__fiber_without_services,0.07619574
+cat__InternetService_Fiber optic,0.05030035
+cat__PaymentMethod_Electronic check,0.04327898
+cat__OnlineBackup_No internet service,0.034313694
+cat__tenure_group_5-6y,0.033126976
+num__tenure,0.032736428
+cat__InternetService_No,0.032157566
+cat__OnlineSecurity_No internet service,0.030659603
+cat__StreamingMovies_Yes,0.028027846
+cat__DeviceProtection_No internet service,0.025931837
+cat__PaperlessBilling_Yes,0.021666516
+cat__tenure_group_new,0.016994847
+cat__StreamingTV_Yes,0.015934715
+cat__OnlineSecurity_Yes,0.015480606
+cat__tenure_group_6-12m,0.015387404
+cat__TechSupport_Yes,0.015053704
+num__TotalCharges,0.014352015
+bin__SeniorCitizen,0.013955613
+num__MonthlyCharges,0.011037018
+cat__MultipleLines_Yes,0.010981565
+cat__PhoneService_Yes,0.010866173
+cat__Dependents_Yes,0.0092349155
+cat__DeviceProtection_Yes,0.006830191
+cat__MultipleLines_No phone service,0.0061394963
+cat__gender_Male,0.0049513606
+cat__PaymentMethod_Mailed check,0.0030071358
+num__num_services,0.0028677126
+bin__senior_alone,0.0016691054
+cat__Partner_Yes,0.0014805985
+cat__tenure_group_4-5y,0.001428074
+cat__OnlineBackup_Yes,0.001310346
+cat__tenure_group_2-3y,0.00078708556
+bin__IsAlone,0.00075231295
+cat__tenure_group_3-4y,0.0
+cat__tenure_group_1-6m,0.0
+cat__PaymentMethod_Credit card (automatic),0.0
+cat__StreamingTV_No internet service,0.0
+cat__TechSupport_No internet service,0.0
+bin__all_internet_services,0.0
+bin__high_monthly_charge,0.0
+cat__StreamingMovies_No internet service,0.0
