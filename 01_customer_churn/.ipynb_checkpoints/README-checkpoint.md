@@ -48,7 +48,7 @@
 ## Как запустить 
 1. Клонировать репозиторий
 ```bash
-git clone https://github.com/USERNAME/customer_churn.git
+git clone https://github.com/weefce/customer_churn.git
 cd customer_churn
 ```
 
