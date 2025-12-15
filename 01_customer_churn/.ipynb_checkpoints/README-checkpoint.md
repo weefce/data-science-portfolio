@@ -29,6 +29,7 @@
 Размер: 7043 клиента, 21 признак
 
 ## Структура проекта 
+```text
 01_customer_churn/
   data/
     WA_Fn-UseC_-Telco-Customer-Churn.csv
@@ -42,18 +43,24 @@
     feature_importance_plot.png
   README.md
   requirements.txt
+```
 
 ## Как запустить 
 1. Клонировать репозиторий
-
-```git clone <ссылка-на-репозиторий>
-cd customer_churn```
+```bash
+git clone https://github.com/USERNAME/customer_churn.git
+cd customer_churn
+```
 
 2. Установить зависимости
-``` pip install -r requirements.txt```
+```bash
+pip install -r requirements.txt
+```
 
 3. Запустить Jupyter Notebook
-```jupyter notebook notebooks/churn_analysis.ipynb```
+```bash
+jupyter notebook notebooks/churn_analysis.ipynb
+```
 
 ## Основные этапы работы 
 1. EDA - анализ данных, выявление паттернов оттока
