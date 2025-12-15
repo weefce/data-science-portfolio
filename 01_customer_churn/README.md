@@ -29,7 +29,7 @@
 Размер: 7043 клиента, 21 признак
 
 ## Структура проекта 
-customer_churn/
+01_customer_churn/
   data/
     WA_Fn-UseC_-Telco-Customer-Churn.csv
   notebooks/
@@ -45,14 +45,15 @@ customer_churn/
 
 ## Как запустить 
 1. Клонировать репозиторий
-git clone <ссылка-на-репозиторий>
-cd customer_churn
 
-# 2. Установить зависимости
-pip install -r requirements.txt
+```git clone <ссылка-на-репозиторий>
+cd customer_churn```
 
-# 3. Запустить Jupyter Notebook
-jupyter notebook notebooks/churn_analysis.ipynb
+2. Установить зависимости
+``` pip install -r requirements.txt```
+
+3. Запустить Jupyter Notebook
+```jupyter notebook notebooks/churn_analysis.ipynb```
 
 ## Основные этапы работы 
 1. EDA - анализ данных, выявление паттернов оттока
@@ -60,5 +61,3 @@ jupyter notebook notebooks/churn_analysis.ipynb
 3. Моделирование - сравнение 5 моделей, подбор гиперпараметров
 4. Выбор модели - XGBoost с кастомным порогом 0.475
 5. Интерпретация - анализ важности признаков
-
-## Автор: Панфилова Валерия 
