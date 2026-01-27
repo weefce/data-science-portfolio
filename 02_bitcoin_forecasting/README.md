@@ -1,0 +1,52 @@
+# Прогнозирование цены биткоина на 7 дней
+
+## Описание проекта
+Сравнительный анализ статистических и ML моделей для прогнозирования цен биткоина с акцентом на избежание утечки данных
+
+## Бизнес задача
+Построение точного краткосрочного прогноза для поддержки инвестиционных решений
+
+## Ключевые результаты
+- Лучшая модель: SARIMA - MAE 328 (1.2% ошибки)
+- SARIMA превосходит naive baseline в 12 раз
+- Все статистические модели лучше baseline
+- Все ML модели хуже baseline из-за необходимости избегать data leakage
+
+## Ключевые выводы
+- Высокая краткосрочная автокорреляция - PACF: lag_1 = 0.99
+- Утечка данных - критическая проблема - для корректности нужны лаги >= 7 дней
+- Статистические модели эффективнее ML - рекурсивное прогнозирование дает преимущество
+- Exponential Smoothing стабильна - MAE 389 на 7 дней, но экспоненциально растет с горизонтом
+
+## Технологии 
+- Библиотеки: pandas, numpy, matplotlib, seaborn, statsmodels, pmdarima, prophet, scikit-learn
+- Методы: ADF тест, сезонное разложение, ACF/PACF анализ, TimeSeriesCV
+- Модели: SARIMA, Exponential Smoothing (add-mul, mul-mul), Prophet, Linear Regression, Ridge, Lasso, XGBoost
+
+## Источник данных
+Проект использует исторические данные Bitcoin с Kaggle [https://www.kaggle.com/competitions/bitcoin-price-forecast/overview]
+Период: 14 января 2022 - 7 июля 2023
+Размер: 540 торговых дней, 6 признаков
+Признаки: Price, Open, High, Low, Volume, Change %
+
+## Структура проекта 
+```text 
+02_bitcoin_forecasting/
+  data/
+    Bitcoin_kaggle.csv
+  notebooks/
+    bitcoin_forecasting.ipynb
+  models/
+    sarima_model.pkl
+  results/
+    predictions.csv          
+  README.md
+```
+
+## Основные этапы работы 
+- EDA временных рядов - анализ трендов, сезонности, стационарности (ADF тест)
+- Преобразование данных - обработка Volume (K/M/B), приведение типов, сортировка по времени
+- Cтатистические модели - SARIMA, Exponential Smoothing, Prophet с разными горизонтами
+- ML подход - Feature Engineering с лагами >= 7 дней (избежание data leakage)
+- Сравнительный анализ моделей, выбор лучшей по MAE
+- Интерпретация - анализ почему статистические модели доминируют

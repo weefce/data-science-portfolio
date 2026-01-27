@@ -42,25 +42,8 @@
     feature_importance.csv
     feature_importance_plot.png
   README.md
-  requirements.txt
 ```
 
-## Как запустить 
-1. Клонировать репозиторий
-```bash
-git clone https://github.com/weefce/customer_churn.git
-cd customer_churn
-```
-
-2. Установить зависимости
-```bash
-pip install -r requirements.txt
-```
-
-3. Запустить Jupyter Notebook
-```bash
-jupyter notebook notebooks/churn_analysis.ipynb
-```
 
 ## Основные этапы работы 
 1. EDA - анализ данных, выявление паттернов оттока
