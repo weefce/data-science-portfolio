@@ -10,7 +10,7 @@
 - Лучшая модель: SARIMA - MAE 328 (1.2% ошибки)
 - SARIMA превосходит naive baseline в 12 раз
 - Все статистические модели лучше baseline
-- Все ML модели хуже baseline из-за необходимости избегать data leakage
+- Все ML модели хуже baseline из-за необходимости избегать утечки данных
 
 ## Ключевые выводы
 - Высокая краткосрочная автокорреляция - PACF: lag_1 = 0.99
@@ -24,9 +24,14 @@
 - Модели: SARIMA, Exponential Smoothing (add-mul, mul-mul), Prophet, Linear Regression, Ridge, Lasso, XGBoost
 
 ## Источник данных
-Проект использует исторические данные Bitcoin с Kaggle [https://www.kaggle.com/competitions/bitcoin-price-forecast/overview]
+Проект использует исторические данные Bitcoin с Kaggle 
+
+[https://www.kaggle.com/competitions/bitcoin-price-forecast/overview]
+
 Период: 14 января 2022 - 7 июля 2023
+
 Размер: 540 торговых дней, 6 признаков
+
 Признаки: Price, Open, High, Low, Volume, Change %
 
 ## Структура проекта 
@@ -47,6 +52,6 @@
 - EDA временных рядов - анализ трендов, сезонности, стационарности (ADF тест)
 - Преобразование данных - обработка Volume (K/M/B), приведение типов, сортировка по времени
 - Cтатистические модели - SARIMA, Exponential Smoothing, Prophet с разными горизонтами
-- ML подход - Feature Engineering с лагами >= 7 дней (избежание data leakage)
+- ML подход - Feature Engineering с лагами >= 7 дней (избежание утечки данных)
 - Сравнительный анализ моделей, выбор лучшей по MAE
 - Интерпретация - анализ почему статистические модели доминируют
