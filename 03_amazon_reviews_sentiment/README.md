@@ -65,8 +65,6 @@ EDA показал, что все не текстовые признаки им�
 ## Структура проекта
 ```text
 03_amazon_reviews_sentiment/
-  data/
-    Reviews.csv
   notebooks/
     amazon_sentiment_analysis.ipynb
   models/
