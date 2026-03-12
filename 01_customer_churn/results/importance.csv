@@ -1,45 +1,36 @@
-Признак,Важность
-bin__temporary_customer,0.1638536
-cat__Contract_Two year,0.14807098
-cat__Contract_One year,0.09917786
-bin__fiber_without_services,0.07619574
-cat__InternetService_Fiber optic,0.05030035
-cat__PaymentMethod_Electronic check,0.04327898
-cat__OnlineBackup_No internet service,0.034313694
-cat__tenure_group_5-6y,0.033126976
-num__tenure,0.032736428
-cat__InternetService_No,0.032157566
-cat__OnlineSecurity_No internet service,0.030659603
-cat__StreamingMovies_Yes,0.028027846
-cat__DeviceProtection_No internet service,0.025931837
-cat__PaperlessBilling_Yes,0.021666516
-cat__tenure_group_new,0.016994847
-cat__StreamingTV_Yes,0.015934715
-cat__OnlineSecurity_Yes,0.015480606
-cat__tenure_group_6-12m,0.015387404
-cat__TechSupport_Yes,0.015053704
-num__TotalCharges,0.014352015
-bin__SeniorCitizen,0.013955613
-num__MonthlyCharges,0.011037018
-cat__MultipleLines_Yes,0.010981565
-cat__PhoneService_Yes,0.010866173
-cat__Dependents_Yes,0.0092349155
-cat__DeviceProtection_Yes,0.006830191
-cat__MultipleLines_No phone service,0.0061394963
-cat__gender_Male,0.0049513606
-cat__PaymentMethod_Mailed check,0.0030071358
-num__num_services,0.0028677126
-bin__senior_alone,0.0016691054
-cat__Partner_Yes,0.0014805985
-cat__tenure_group_4-5y,0.001428074
-cat__OnlineBackup_Yes,0.001310346
-cat__tenure_group_2-3y,0.00078708556
-bin__IsAlone,0.00075231295
-cat__tenure_group_3-4y,0.0
-cat__tenure_group_1-6m,0.0
-cat__PaymentMethod_Credit card (automatic),0.0
-cat__StreamingTV_No internet service,0.0
-cat__TechSupport_No internet service,0.0
-bin__all_internet_services,0.0
-bin__high_monthly_charge,0.0
-cat__StreamingMovies_No internet service,0.0
+feature,importance,abs_importance
+cat__InternetService_Fiber optic,2.3616603546656707,2.3616603546656707
+num__MonthlyCharges,-2.0096923222381275,2.0096923222381275
+cat__Contract_Two year,-1.741139121515028,1.741139121515028
+cat__MultipleLines_No phone service,-0.9491958765502446,0.9491958765502446
+num__num_services,0.9145907574405607,0.9145907574405607
+bin__temporary_customer,0.7641427381987392,0.7641427381987392
+num__tenure,-0.7388424642711263,0.7388424642711263
+cat__MultipleLines_Yes,0.5967045175450221,0.5967045175450221
+cat__Contract_One year,-0.5861375289829822,0.5861375289829822
+cat__StreamingMovies_Yes,0.5393018554420442,0.5393018554420442
+cat__OnlineSecurity_Yes,-0.5123319075978258,0.5123319075978258
+cat__TechSupport_Yes,-0.38536666853923707,0.38536666853923707
+cat__TechSupport_No internet service,-0.34149983249831983,0.34149983249831983
+cat__OnlineSecurity_No internet service,-0.34149983249831983,0.34149983249831983
+cat__StreamingTV_No internet service,-0.34149983249831983,0.34149983249831983
+cat__StreamingMovies_No internet service,-0.34149983249831983,0.34149983249831983
+cat__DeviceProtection_No internet service,-0.34149983249831983,0.34149983249831983
+cat__OnlineBackup_No internet service,-0.34149983249831983,0.34149983249831983
+cat__InternetService_No,-0.34149983249831983,0.34149983249831983
+num__TotalCharges,0.3386801699833298,0.3386801699833298
+cat__PaymentMethod_Electronic check,0.2991357704979205,0.2991357704979205
+cat__OnlineBackup_Yes,-0.28984596138627683,0.28984596138627683
+cat__PaperlessBilling_Yes,0.28885755695517584,0.28885755695517584
+cat__StreamingTV_Yes,0.26850580387426287,0.26850580387426287
+bin__fiber_without_services,0.21348617195242997,0.21348617195242997
+bin__senior_alone,0.2071749612768853,0.2071749612768853
+cat__PhoneService_Yes,-0.12969166156094275,0.12969166156094275
+cat__DeviceProtection_Yes,-0.12518607572903728,0.12518607572903728
+bin__SeniorCitizen,0.1065400519550849,0.1065400519550849
+cat__Partner_Yes,0.08310046303770431,0.08310046303770431
+cat__PaymentMethod_Mailed check,-0.07624064182048307,0.07624064182048307
+cat__Dependents_Yes,-0.06934684430520437,0.06934684430520437
+cat__PaymentMethod_Credit card (automatic),-0.06882445173499202,0.06882445173499202
+cat__gender_Male,-0.052731327601605586,0.052731327601605586
+bin__IsAlone,0.04225931693645639,0.04225931693645639
