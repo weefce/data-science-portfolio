@@ -40,6 +40,19 @@ data-science-portfolio/
             predictions.csv
         README.md
 
+    04_question_classification/      # Классификация происхождения вопросов (VK)
+        data/
+            data.csv                 
+            train.csv                
+            test.csv                
+        notebooks/
+            classification_questions.ipynb
+        models/
+            best_xgboost.pkl
+        results/
+            test_predictions.csv
+        README.md
+
     requirements.txt
     README.md
 ```
@@ -107,6 +120,32 @@ data-science-portfolio/
 
 ---
 
+### 4. [Классификация происхождения вопросов (проект VK)](04_question_classification/)
+
+**Задача:** Разработать модель, отличающую вопросы, подготовленные профессиональными редакторами, от вопросов, предложенных пользователями игры
+
+**Что сделано:**
+- Полный цикл ML: EDA, TF-IDF, Pipeline, кросс-валидация
+- Сравнение 4 моделей: Logistic Regression, XGBoost, Linear SVC, LightGBM
+- Подбор гиперпараметров (RandomizedSearchCV)
+- Оптимизация порога классификации для повышения recall редкого класса
+
+**Ключевые результаты:** 
+- Recall (редакторы): 50% - найдена половина редакторских вопросов
+- Recall (пользователи): 71%
+- Accuracy: 69%
+- Лучшая модель: XGBoost с подбором гиперпараметров
+
+**Сложность задачи:**
+- Данные сильно несбалансированы (90% пользователей / 10% редакторов)
+- Лексика классов почти неразличима (топ-10 слов одинаков)
+- Задача объективно сложная даже для человека
+- Методы TF-IDF + XGBoost дали recall 50% - это хороший результат для таких данных
+
+**Технологии:** Python, Pandas, Scikit-learn, XGBoost, NLTK
+
+---
+
 ## Технологический стек
 
 - Язык: Python 3.9+
@@ -119,5 +158,5 @@ data-science-portfolio/
 ---
 
 ## Контакты
-- Telegram: [@weefce]
+- Telegram: @weefce
 - Email: valeri05.lera@mail.ru
