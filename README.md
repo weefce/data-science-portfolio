@@ -52,6 +52,11 @@ data-science-portfolio/
         results/
             test_predictions.csv
         README.md
+    
+    certificates/                    # Сертификаты
+        vk_question_classification.pdf
+        stepik_machine_learning_course.pdf
+        stepik_sql_course.pdf
 
     requirements.txt
     README.md
