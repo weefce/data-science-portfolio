@@ -52,6 +52,16 @@ data-science-portfolio/
         results/
             test_predictions.csv
         README.md
+
+    05_wildberries_hackathon/          # Прогнозирование отгрузок (Wildberries)
+        data/
+            train_solo_track.parquet
+            test_solo_track.parquet
+        notebooks/
+            wildberries_forecasting.ipynb
+        results/
+            submission_ridge_7days.csv
+        README.md
     
     certificates/                    # Сертификаты
         vk_question_classification.pdf
@@ -148,6 +158,25 @@ data-science-portfolio/
 - Методы TF-IDF + XGBoost дали recall 50% - это хороший результат для таких данных
 
 **Технологии:** Python, Pandas, Scikit-learn, XGBoost, NLTK
+
+---
+
+### 5. [Прогнозирование отгрузок со складов (Wildberries)](05_wildberries_hackathon/)
+
+**Задача:** Прогнозирование объёмов отгрузок со складов на 8 шагов вперёд (шаг 30 минут)
+
+**Что сделано:**
+- Глубокий EDA, выявление шума и волатильности данных
+- Feature Engineering: лаги, суммы, временные признаки
+- Валидация на разных временных окнах (7, 14, 21 день)
+- Обучение Ridge регрессии на последних 7 днях
+
+**Ключевые результаты:**
+- Лучшая модель: Ridge регрессия на последних 7 днях
+- Скор на публичном лидерборде: 0.3365
+- Скор на приватном лидерборде: 0.3349
+
+**Технологии:** Python, Pandas, Scikit-learn (Ridge), Matplotlib, Seaborn
 
 ---
 
